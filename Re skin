@@ -60,7 +60,7 @@ elseif placeId == 4442272183 then
 elseif placeId == 7449423635 then
     Three_World = true
 end
-_G.Color = Color3.fromRGB(68, 202, 186)
+_G.Color = Color3.fromRGB(127, 0, 255)
 
 _G.Setting_table = {
     Auto_Farm = false,
@@ -2130,7 +2130,7 @@ if IKAI then
 		Main.Parent = RippleHUBLIB
 		Main.ClipsDescendants = true
 		Main.AnchorPoint = Vector2.new(0.5,0.5)
-		Main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+		Main.BackgroundColor3 = Color3.fromRGB(	45, 45, 45)
 		Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 		Main.Size = UDim2.new(0, 0, 0, 0)
 		
@@ -2401,7 +2401,7 @@ if IKAI then
 	ImageLabelfps.BackgroundTransparency = 1.000
 	ImageLabelfps.Position = UDim2.new(0.083989636, 0, 0.15545856, 0)
 	ImageLabelfps.Size = UDim2.new(0, 29, 0, 29)
-	ImageLabelfps.Image = "rbxassetid://9606070311"
+	ImageLabelfps.Image = "rbxassetid://90032597"
 	
 	ImageLabeltime.Name = "ImageLabeltime"
 	ImageLabeltime.Parent = Frametime
