@@ -1,4 +1,4 @@
---กูไม่Obfuscator เพราะ switch Hub มันพม่า
+--กูไม่Obfuscator แล้วไอสัส
 
 if not game:IsLoaded() then 
     repeat game.Loaded:Wait()
@@ -89,24 +89,24 @@ getgenv()['JsonDecode'] = function(msg)
     return game:GetService("HttpService"):JSONDecode(msg)
 end
 getgenv()['Check_Setting'] = function(Name)
-    if not _G.Dis and not isfolder('Switch Hub BF Premium') then
-        makefolder('Switch Hub BF Premium')
+    if not _G.Dis and not isfolder('Caxy Hub BF CrackSWH') then
+        makefolder('Caxy Hub BF CrackSWH')
     end
-    if not _G.Dis and not isfile('Switch Hub BF Premium/'..Name..'.json') then
-        writefile('Switch Hub BF Premium/'..Name..'.json',JsonEncode(_G.Setting_table))
+    if not _G.Dis and not isfile('Caxy Hub BF CrackSWH/'..Name..'.json') then
+        writefile('Caxy Hub BF CrackSWH/'..Name..'.json',JsonEncode(_G.Setting_table))
     end
 end
 getgenv()['Get_Setting'] = function(Name)
-    if not _G.Dis and isfolder('Switch Hub BF Premium') and isfile('Switch Hub BF Premium/'..Name..'.json') then
-        _G.Setting_table = JsonDecode(readfile('Switch Hub BF Premium/'..Name..'.json'))
+    if not _G.Dis and isfolder('Caxy Hub BF CrackSWH') and isfile('Caxy Hub BF CrackSWH/'..Name..'.json') then
+        _G.Setting_table = JsonDecode(readfile('Caxy Hub BF CrackSWH/'..Name..'.json'))
         return _G.Setting_table
 	elseif not _G.Dis then
         Check_Setting(Name)
     end
 end
 getgenv()['Update_Setting'] = function(Name)
-    if not _G.Dis and isfolder('Switch Hub BF Premium') and isfile('Switch Hub BF Premium/'..Name..'.json') then
-        writefile('Switch Hub BF Premium/'..Name..'.json',JsonEncode(_G.Setting_table))
+    if not _G.Dis and isfolder('Caxy Hub BF CrackSWH') and isfile('Caxy Hub BF CrackSWH/'..Name..'.json') then
+        writefile('Caxy Hub BF CrackSWH/'..Name..'.json',JsonEncode(_G.Setting_table))
 	elseif not _G.Dis then
         Check_Setting(Name)
     end
@@ -2381,7 +2381,7 @@ if IKAI then
 				local seconds = scripttime%60
 				local minutes = math.floor(scripttime/60%60)
 				local hours = math.floor(scripttime/3600)
-				local tempo = string.format("%.0f Hour , %.0f Minute , %.0f Second", hours ,minutes, seconds)
+				local tempo = string.format("%.0f ชั่วโมง , %.0f นาที , %.0f วินาที", hours ,minutes, seconds)
 				TextLabeltime.Text = tempo
 			end)
 		end
